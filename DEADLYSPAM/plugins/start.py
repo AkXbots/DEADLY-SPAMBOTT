@@ -16,17 +16,17 @@ OWNER_INFO = config.OWNER_NAME
 if config.OWNER_NAME:
     OWNER_NAME = OWNER_INFO
 else:
-    OWNER_NAME = "DEADLY-USER"
+    OWNER_NAME = "JASHAN-BAL"
 
 OWNER_ID = config.OWNER_ID
 
 Deadly_Button = [
         [
-        Button.url("Cʜᴀɴɴᴇʟ", "https://t.me/friends_zone3"),
-        Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/zadkiel_network")
+        Button.url("Cʜᴀɴɴᴇʟ", "https://t.me/Xd_Bot_Updates"),
+        Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/Xd_Bots_Support")
         ],
         [
-        Button.url("• Rᴇᴘᴏ •", "https://github.com/Moca96/DEADLY-SPAMBOTT")
+        Button.url("• Dᴇꜱᴛʀᴏʏᴇʀꜱ •", "https://t.me/Bonten_Destroyers")
         ]
         ]
         
@@ -50,7 +50,7 @@ async def start(e):
         user_id = e.sender_id
         mention = f"[{name}](tg://user?id={user_id})"
         myOwner = f"[{OWNER_NAME}](tg://user?id={OWNER_ID})"
-        creator = f"[🇲 🇴 🇨 🇦](tg://user?id={5486520312})"
+        creator = f"[Jᴀꜱʜᴀɴ Bᴀʟ](tg://user?id={6058139652})"
         DEADLY_ON = f"""
 ʜᴇʏ {mention},
 ᴛʜɪs ɪs ᴅᴇᴀᴅʟʏ sᴘᴀᴍʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- {creator}!
@@ -59,6 +59,6 @@ async def start(e):
 
 ᴄᴏᴅᴇ ᴄʀᴇᴀᴛᴏʀ:- {creator}
 
-ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴀᴄᴄᴇss sᴜᴘᴘᴏʀᴛ ,ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ʀᴇᴘᴏ!
+ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴀᴄᴄᴇss sᴜᴘᴘᴏʀᴛ ,ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴅꜱᴛ!
     """
         await e.client.send_file(e.chat_id, DEADLY_IMG, caption=DEADLY_ON, buttons=Deadly_Button)
